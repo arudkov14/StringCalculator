@@ -1,0 +1,19 @@
+{
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arudkov14/StringCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arudkov14/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/arudkov14/StringCalculator#readme"
+}
