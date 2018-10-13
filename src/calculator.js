@@ -4,7 +4,7 @@
 
 function add(String)
 {
-    const separators = [',','\\n',' ;'];
+    const separators = [',','\\n',' ;']; //can add extra delimiter here
     const negativeNum = [];
     const limit = 1000;
     
