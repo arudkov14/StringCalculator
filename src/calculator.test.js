@@ -5,7 +5,7 @@ test('Should return expected sum ',() => {
 });
 
 test('Should return expected sum with more numbers and larger numb ',() => {
-    expect(add('2, 3, 7, 2, 4 ,5 ,78,777')).toBe(878);
+    expect(add('2, 3, 7, 2; 4 ,5 ,78,777')).toBe(878);
 });
 
 test('Should be 1 if input is 1', () => {
@@ -18,6 +18,14 @@ test('Should be 0 if no input', () =>{
 
 test('Allow new line \n separators', () => {
     expect(add('1,2 \n3')).toBe(6);
+});
+
+test('Does not like negative num', () => {
+    expect(() => add('-2, 2, 1')).toThrow();
+});
+
+test('Ignores numb above 1000', () => {
+    expect(add('1001, 2')).toBe(2);
 });
 
 
