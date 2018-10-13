@@ -2,13 +2,23 @@
 
 
 
-function add(number)
+function add(String)
 {
-    if (String.length == 1)
+    const separator = ',';
+    
+    if(String.length == 0)
     {
-        return parseInt(number);
+        return 0;
     }
-    return 0;
+
+    const list = String.split(separator)
+
+    let sum = 0;
+    for(let i=0; i<list.length; i++)
+    {
+        sum += parseInt(list[i]);
+    }
+    return sum;
 }
  module.exports = add;
 
